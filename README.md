@@ -10,4 +10,4 @@ For formatting, a combination of HTML and CSS were used to create a visual site 
 
 
 To get this started, download the files and make sure to create a virtual environment within the folder this project was downloaded to. When complete, run 
-|| python3 application.py|| and copy/paste the url it gives you into a browser and you're good to go!
+'python3 application.py' and copy/paste the url it gives you into a browser and you're good to go!
