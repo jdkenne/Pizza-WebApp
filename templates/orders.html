@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<body style="background-color: orange"></body>
+</head>
+    {%for row in data%}
+    <li>{{row[1]}}</li>
+    <li>{{row[2]}}</li>
+    <li>{{row[3]}}</li>
+    {% endfor %}
+    <form action ="/home", methods=['POST']>
+        <button name="Back" type ="submit">Go Back</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<body style="background-color: orange"></body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<table>
+    <tr>    
+       <td>
+        <th>Item</th>
+            {% for col in data %} 
+            <td>{{ col[0] }}</td>
+            {% endfor %}
+        </tr> 
+        <td>
+        <th>Stock</th>
+            {% for col in data %}
+            <td>{{ col[1] }}</td>
+            {% endfor %} 
+        </tr> 
+    </tr>         
+</table>
+<form action ="/home", methods=['POST']>
+        <button name="Back" type ="submit">Go Back</button>
+</form>
+</html>

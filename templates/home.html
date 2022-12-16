@@ -1,0 +1,47 @@
+<body style="background-color: purple">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+    <h1>
+      Welcome back user!
+      <h1/>
+      <h2>
+        What would you like to do today?
+        <div class = 'btn-group'>
+        <form action ="/add_customers", methods=['POST']>
+            <button name="Add Customer" type ="submit">Add Customer</button>
+        </form>
+
+        <form action="/view_customer", methods=['POST']>
+            <button name="View Customers" type="submit">View Customers</button>
+        </form>
+
+        <form action ="/add_order", methods=['POST']>
+            <button name="Add Order" type="submit">Add Order</button>
+        </form>
+    
+        <form action ="/view_orders", methods=['POST'}>
+            <button name="View Orders" type="submit">View Orders</button>
+        </form>
+        
+        <form action ="/add_inventory", methods=['POST'}>
+            <button name="Add Inventory" type="submit">Add Inventory</button>
+        </form>
+
+        <form action ="/view_inventory", methods=['POST']>
+            <button name="View Inventory" type="submit">View Inventory</button>
+        </form>
+
+        <form action ="/progress_reports", methods=['POST']>
+            <button name="View Progress Report" type="submit">View Progress Report</button>
+        </form>
+
+        <form action ="/logout", methods=['POST']>
+            <button name="Logout" type="submit">Logout</button>
+        </form>
+        </div>
+      </h2>
+    </h1>
+  </body>
+  

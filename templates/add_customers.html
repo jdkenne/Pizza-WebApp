@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <body style="background-color: purple"></body>
+    <title>Add a Customer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <input
+          type="text"
+          placeholder="Phone Number"
+          name="phone_num"
+          value="{{
+          request.form.phone_num }}"
+        />
+        <input
+          type="text"
+          placeholder="First name"
+          name="first_name"
+          value="{{
+          request.form.first_name }}"
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          name="last_name"
+          value="{{
+                request.form.last_name }}"
+        />
+        <input class="btn btn-default" type="submit" value="Submit" />
+      </form>
+      {% if error %}
+      <p class="error"><strong>Error:</strong> {{ error }} {% endif %}</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<body style="background-color: orange"></body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<table>
+    <tr>    
+       <td>
+        <th>Pizza Size</th>
+            {% for col in data %} 
+            <td>{{ col[0] }}</td>
+            {% endfor %}
+        </tr> 
+        <td>
+        <th>Pizza Crust</th>
+            {% for col in data %}
+            <td>{{ col[1] }}</td>
+            {% endfor %} 
+        </tr>
+        <td>
+            <th>Profit</th>
+            {% for col in data %}
+            <td>{{ col[2] }}</td>
+            {% endfor %}
+        </tr>
+        <td>
+            <th>Last Order Date</th>
+            {% for col in data %}
+            <td>{{ col[3] }}</td>
+            {% endfor %}
+        </tr> 
+    </tr>         
+</table>
+<form action ="/home", methods=['POST']>
+        <button name="Back" type ="submit">Go Back</button>
+</form>
+</html>

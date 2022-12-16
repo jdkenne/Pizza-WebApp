@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <body style="background-color: purple"></body>
+    <title>Add Order</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <input
+          type="text"
+          placeholder="Order complete?"
+          name="order_time"
+          value="{{ request.form.order_time }}"
+        />
+        <input
+          type="text"
+          placeholder="What type of order? DineIn, PickUp, Delivery?"
+          name="order_type"
+          value="{{ request.form.order_type }}"
+        />
+        <input
+          type="text"
+          placeholder="What is your phone number?"
+          name="cust_num"
+          value="{{ request.form.cust_num }}"
+        />
+        <input
+          type="text"
+          placeholder="What was the total cost of order?"
+          name="order_cost"
+          value="{{ request.form.order_cost }}"
+        />
+        <input
+          type="text"
+          placeholder="What was the total price of the order?"
+          name="order_price"
+          value="{{ request.form.order_price }}"
+        />
+        <input
+          type="text"
+          placeholder="What the order completed? 1 or 0"
+          name="order_status"
+          value="{{ request.form.order_status }}"
+        />
+        <input class="btn btn-default" type="submit" value="Submit" />
+      </form>
+      {% if error %}
+      <p class="error"><strong>Error:</strong> {{ error }} {% endif %}</p>
+      <form action ="/home", methods=['POST']>
+        <button name="Back" type ="submit">Go Back</button>
+    </form>
+    </div>
+  </body>
+</html>

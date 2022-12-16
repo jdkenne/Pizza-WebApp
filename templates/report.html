@@ -1,0 +1,23 @@
+<body style="background-color: purple">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+    <h1>
+      Which report would you like?
+      <h1/>
+        <div class = 'btn-group'>
+        <form action ="/topping_popularity", methods=['POST']>
+            <button name="Popular Toppings" type ="submit">Popular Toppings</button>
+        </form>
+
+        <form action="/profit_pizza", methods=['POST']>
+            <button name="Profit By Pizza" type="submit">Profit by Pizza</button>
+        </form>
+
+        <form action ="/profit_order", methods=['POST']>
+            <button name="Profit by Order" type="submit">Profit by Order</button>
+        </form>
+        <form action ="/home", methods=['POST']>
+            <button name="Back" type ="submit">Go Back</button>
+    </form>

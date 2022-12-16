@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <body style="background-color: purple"></body>
+    <title>Add to Inventory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" method="post">
+        <input
+          type="text"
+          placeholder="What topping would you like to update?"
+          name="topping"
+          value="{{ request.form.topping }}"
+        />
+        <input
+          type="text"
+          placeholder="How much would you like to add?"
+          name="quantity"
+          value="{{ request.form.quantity }}"
+        />
+        <input class="btn btn-default" type="submit" value="Submit" />
+      </form>
+      {% if error %}
+      <p class="error"><strong>Error:</strong> {{ error }} {% endif %}</p>
+      <form action ="/home", methods=['POST']>
+        <button name="Back" type ="submit">Go Back</button>
+    </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.btn-group button {
+  background-color: orange;
+  border: 1px solid purple;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
